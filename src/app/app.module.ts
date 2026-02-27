@@ -2,13 +2,13 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
-import { App } from './app';
-import { Home } from './pages/home/home';
+import { AppComponent } from './app.component';
+import { Home } from './pages/home/home.component';
 import { ExemploComponente } from './_components/exemplo-componente/exemplo-componente';
 
 @NgModule({
   declarations: [
-    App,
+    AppComponent,
     Home,
     ExemploComponente
   ],
@@ -19,6 +19,6 @@ import { ExemploComponente } from './_components/exemplo-componente/exemplo-comp
   providers: [
     provideBrowserGlobalErrorListeners(),
   ],
-  bootstrap: [App]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
